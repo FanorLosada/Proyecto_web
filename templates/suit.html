@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    
+    <title>Bootcampc</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <nav>
+        <ul class="navul">
+            <li class="navulli"><a class="navullia" href="{{ url_for('index') }}">Inicio</a></li>
+            <li class="navulli"><a class="navullia"  href=".">Hospedaje </a>
+                <ul class="navsubul">
+                    <li class="subnavli"><a class="subnavlia"  href="{{ url_for('habitaciones') }}">Habitaciones</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href="{{ url_for('apartamentos') }}"> Apartamentos</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href= "{{ url_for('suit') }}"> Suit</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href=".">Salas</a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a class="subnavlia"class="subnavlia"  href="{{ url_for('ejecutiva') }}">Ejecutiva</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('oficina') }}"> Oficina</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('multiple') }}"> Multiple</a></li>
+                </ul> 
+            </li>      
+            <li class="navulli"><a class="navullia" href="{{ url_for('restaurante') }}">Restaurante</a></li>
+            <li class="navulli"><a class="navullia" href="."> El Hotel </a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('historia') }}">Historia</a></li>
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('mision') }}"> Mision</a></li>
+                    <li class="subnavli" ><a class="subnavlia" href="{{ url_for('vision') }}"> Vision</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href="{{ url_for('micuenta') }}" target="_blank"> Mi cuenta </a></li>
+        </ul>
+    </nav>
+    <section class="hospedaje">
+        <h1>Elige tu suit</h1>
+        <div id="contenedor" class="contenedor">
+            <div>
+                <img src="/static/imagenes/suit1.jpg" alt="producto 1">
+                <div class="informacion">
+                    <p><strong>suit 1</strong></p>
+                    <p class="precio">$199<span>.99</span></p>
+                    <button>Reservar</button>
+                </div>
+            </div>
+            <div>
+                <img src="/static/imagenes/suit2jpg.jpg" alt="producto 2">
+                <div class="informacion">
+                    <p><strong>suit 2</strong></p>                   
+                    <p class="precio">$299<span>.99</span></p>
+                    <button>Reservar</button>
+                </div>
+            </div>
+            <div>
+                <img src="/static/imagenes/suit3.jpg" alt="producto 3">
+                <div class="informacion">
+                    <p><strong>suit 3</strong></p>                   
+                    <p class="precio">$399<span>.99</span></p>
+                    <button>Reservar</button>
+                </div>
+            </div>
+            <div>
+                <img src="/static/imagenes/suit4.jpg" alt="producto 4">
+                <div class="informacion">
+                    <p><strong>suit 4</strong></p>                   
+                    <p class="precio">$499<span>.99</span></p>
+                    <button>Reservar</button>
+                </div>
+            </div>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=T.." class="btn-wsp" target="_blank"> <img  class="btn-wspi" src="/static/imagenes/whatsapp-line.png" alt="wha"></a>    
+        <script src="app.js"></script>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

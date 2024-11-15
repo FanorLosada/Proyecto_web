@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/micuenta.css">
+    <title>Bootcampc</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+    <section>
+        <!--<h1><strong>HOTEL BOOTCAMPC</strong></h1>-->
+        
+        <div class="inicio">
+            <h2>Inicia tu sesión</h2>
+            <form class="form" action="/micuenta" method="POST">
+                <div class="usuario">
+                    <span><input type="text" name="usuario" required></span>
+                    <label>Nombre de usuario</label>
+                </div>
+                <div class="contraseña">
+                    <span><input type="password" name="contrasena" required></span>
+                    <label>Digite su contraseña</label>
+                </div>
+                <div class="recordar">¿Olvidaste tu contraseña?</div>
+                <button type="submit">Iniciar</button>
+                <div class="registro">
+                    Quiero <a href="./registro">registrarme</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <a href="https://api.whatsapp.com/send?phone=T.." class="btn-wsp" target="_blank">
+        <img class="btn-wspi" src="/static/imagenes/whatsapp-line.png" alt="wha">
+    </a>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    
+    <title>Bootcampc</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <ul class="navul">
+            <li class="navulli"><a class="navullia" href="{{ url_for('index') }}">Inicio</a></li>
+            <li class="navulli"><a class="navullia"  href=".">Hospedaje </a>
+                <ul class="navsubul">
+                    <li class="subnavli"><a class="subnavlia"  href="{{ url_for('habitaciones') }}">Habitaciones</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href="{{ url_for('apartamentos') }}"> Apartamentos</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href= "{{ url_for('suit') }}"> Suit</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href=".">Salas</a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a class="subnavlia"class="subnavlia"  href="{{ url_for('ejecutiva') }}">Ejecutiva</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('oficina') }}"> Oficina</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('multiple') }}"> Multiple</a></li>
+                </ul> 
+            </li>      
+            <li class="navulli"><a class="navullia" href="{{ url_for('restaurante') }}">Restaurante</a></li>
+            <li class="navulli"><a class="navullia" href="."> El Hotel </a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('historia') }}">Historia</a></li>
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('mision') }}"> Mision</a></li>
+                    <li class="subnavli" ><a class="subnavlia" href="{{ url_for('vision') }}"> Vision</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href="{{ url_for('micuenta') }}" target="_blank"> Mi cuenta </a></li>
+        </ul>
+    </nav>
+    <section class="seccion-principal">
+        <h1>Nuestra historia</h1>
+                
+        <p> <br>
+            El Hotel Bootcamp se fundó en 2018 con el objetivo de ofrecer un servicio de hospedaje excepcional, adaptado a las necesidades de nuestros huéspedes. Desde nuestros inicios, nos hemos esforzado por crear un ambiente acogedor y funcional, donde cada visitante se sienta como en casa. Sin embargo, fue en 2020, en medio de la pandemia, cuando decidimos transformar nuestra propuesta de valor. Con el auge del trabajo remoto, nos dimos cuenta de que muchos profesionales buscaban un lugar que no solo les proporcionara comodidad, sino que también les permitiera continuar con sus labores diarias en un entorno inspirador.<br>
+            <br>
+        </p>   
+        
+        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/900/450/75/dam/wdpro-assets/dlr/places-to-stay/disneyland-hotel/resort-overview/disneyland-hotel-06.jpg?1731482272877" alt="">
+        
+        <p> 
+            Así, emprendimos un proceso de reformulación que incluyó la mejora de nuestras instalaciones y la incorporación de servicios diseñados específicamente para aquellos que trabajaban desde sus habitaciones. Creamos espacios de coworking, equipamos las habitaciones con tecnología de vanguardia y garantizamos conexiones a internet de alta velocidad. Además, desarrollamos paquetes de hospedaje que combinan la comodidad de un hotel con las necesidades de los profesionales modernos, ofreciendo desde salas de reuniones hasta opciones de relajación después de una jornada de trabajo.
+        </p>
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=T.." class="btn-wsp" target="_blank"> <img  class="btn-wspi" src="/static/imagenes/whatsapp-line.png" alt="wha"></a>
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

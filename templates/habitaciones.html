@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    
+    <title>Bootcampc</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <nav>
+        <ul class="navul">
+            <li class="navulli"><a class="navullia" href="{{ url_for('index') }}">Inicio</a></li>
+            <li class="navulli"><a class="navullia"  href=".">Hospedaje </a>
+                <ul class="navsubul">
+                    <li class="subnavli"><a class="subnavlia"  href="{{ url_for('habitaciones') }}">Habitaciones</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href="{{ url_for('apartamentos') }}"> Apartamentos</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href= "{{ url_for('suit') }}"> Suit</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href=".">Salas</a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a class="subnavlia"class="subnavlia"  href="{{ url_for('ejecutiva') }}">Ejecutiva</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('oficina') }}"> Oficina</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('multiple') }}"> Multiple</a></li>
+                </ul> 
+            </li>      
+            <li class="navulli"><a class="navullia" href="{{ url_for('restaurante') }}">Restaurante</a></li>
+            <li class="navulli"><a class="navullia" href="."> El Hotel </a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('historia') }}">Historia</a></li>
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('mision') }}"> Mision</a></li>
+                    <li class="subnavli" ><a class="subnavlia" href="{{ url_for('vision') }}"> Vision</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href="{{ url_for('micuenta') }}" target="_blank"> Mi cuenta </a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="davpadrehabitaciones"> 
+            <div class="box-carrucelhabitaciones">
+                <ul>
+                    <li ><img src="https://t1.uc.ltmcdn.com/es/posts/1/9/2/guia_de_decoracion_para_habitaciones_de_hoteles_47291_orig.jpg" alt="piscina">     
+                    </li>
+                    <li><img src=https://www.hotelesh4.com/wp-content/uploads/2023/07/Apt-Sup-Piscina-202-2-scaled.jpg" alt="HOTEL">     
+                    </li>
+                    <li ><img src="https://www.sixtytwohotel.com/wp-content/uploads/2013/10/Sixtytwo-hotel-doble-estandar-interior.jpg" alt="study">     
+                    </li>
+                    <li ><img  src="https://procoen.com/wp-content/uploads/2019/11/control-de-humedad-en-habitaciones-de-hotel-scaled.jpg" alt="HOTEL">     
+                    </li>        
+                    <li c><img src="https://image-tc.galaxy.tf/wijpeg-2gu9acr6xs2lg9lw0dm3v3dde/superior_standard.jpg?crop=63%2C0%2C1795%2C1346" alt="camas">     
+                    </li>
+                </ul>  
+            </div>
+            <div class="box-carrucelhabitacionesp">
+                <h1>Merecido descanso</h1>
+                <p class="parrafohabitaciones"> 
+                    Descansa en una cama con cabecera trenzada similar al yute o fique, que evoca los resguardos indígenas. En el baño de la Business Suite encuentras tu tina Victoria + Albert con duchas de hidromasajes y lujosos productos Loto del Sur. Aparte de su estética elevada, las habitaciones y suites del B.O.G. cuentan con un sistema de insonorización que aísla completamente los ruidos externos para tu mejor experiencia de alojamiento.
+                </p> 
+            </div>
+            <!--<div class="box-carrucelhabitacionestres">-->
+            <div class="box-carrucelhabitacionestres">
+                <ul>
+                    <li><img src="https://image-tc.galaxy.tf/wijpeg-eyr52xw84o2kmnja0peti508w/realda-1.jpg?width=1920" alt="HOTEL">     
+                    </li>
+                    <li ><img src="https://puntadiamantehotel.com/wp-content/uploads/2018/06/Habitacion_premium_king_75.jpg">     
+                    </li>
+                    <li ><img src="https://i0.wp.com/amenitiz.com/wp-content/uploads/2022/10/kgqgnwmtziuttytvkfru.jpg?fit=2048%2C1365&ssl=1" alt="study">     
+                    </li>
+                    <li ><img  src="https://images.trvl-media.com/lodging/19000000/18090000/18081500/18081407/8b989dcc.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" alt="HOTEL">     
+                    </li>        
+                    <li c><img src="https://goquitohotel.com/wp-content/uploads/2023/06/GoQuitoHotelRoom.jpg" alt="camas">     
+                    </li>
+                </ul>  
+            </div>
+        </div>
+       
+        <p class="parrafo-contacto">Contactanos para  mas informacion y has tu reserva</p>
+        
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=T.." class="btn-wsp" target="_blank"> <img  class="btn-wspi" src="/static/imagenes/whatsapp-line.png" alt="wha"></a>
+	
+    <footer>
+        <<p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

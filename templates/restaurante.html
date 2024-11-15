@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    
+    <title>Bootcampc</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <nav>
+        <ul class="navul">
+            <li class="navulli"><a class="navullia" href="{{ url_for('index') }}">Inicio</a></li>
+            <li class="navulli"><a class="navullia"  href=".">Hospedaje </a>
+                <ul class="navsubul">
+                    <li class="subnavli"><a class="subnavlia"  href="{{ url_for('habitaciones') }}">Habitaciones</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href="{{ url_for('apartamentos') }}"> Apartamentos</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href= "{{ url_for('suit') }}"> Suit</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href=".">Salas</a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a class="subnavlia"class="subnavlia"  href="{{ url_for('ejecutiva') }}">Ejecutiva</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('oficina') }}"> Oficina</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('multiple') }}"> Multiple</a></li>
+                </ul> 
+            </li>      
+            <li class="navulli"><a class="navullia" href="{{ url_for('restaurante') }}">Restaurante</a></li>
+            <li class="navulli"><a class="navullia" href="."> El Hotel </a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('historia') }}">Historia</a></li>
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('mision') }}"> Mision</a></li>
+                    <li class="subnavli" ><a class="subnavlia" href="{{ url_for('vision') }}"> Vision</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href="{{ url_for('micuenta') }}" target="_blank"> Mi cuenta </a></li>
+        </ul>
+    </nav>
+    <section class="restaurante">
+        <h1>Bienvenidos al restaurante de su  Hotel Bootcampc</h1>
+        
+        <p> Estimado huésped,nos enorgullece ser su elección en la ciudad, por eso le ofrecemos comida a la carta.  
+        </p> 
+        <div class="platos">
+            <div class="divplatos">
+                <img src="/static/imagenes/platos-tipicos-colombianos.jpg" alt="tupicos">
+                <p><strong>Tipicos</strong></p>
+            </div>
+            <div class="divplatos">
+            <img src="/static/imagenes/carnesjpg.jpg" alt="carnes">
+            <p><strong>Carnes</strong></p>
+            </div>
+            <div class="divplatos">
+                <img src="/static/imagenes/verdurasjpg.jpg" alt="verduras">
+                <p><strong>Verduras</strong></p>
+            </div>
+               
+        </div> 
+        <div class="box-carrucelrestaurante">
+            <ul>
+                <li><img src="/static/imagenes/restaurante.jpg" alt="restaurante">     
+                </li>
+                <li ><img src="/static/imagenes/restaurante2.jpg" alt="restaurante">     
+                </li>
+                <li ><img src="/static/imagenes/restaurante3.jpg" alt="restaurante">     
+                </li>
+                <li ><img  src="/static/imagenes/restaurante4.jpg" alt="restaurante">     
+                </li>        
+            </ul>  
+        </div>
+        <p>Contactanos para  mas informacion y has tu reserva</p>
+        
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=T.." class="btn-wsp" target="_blank"> <img  class="btn-wspi" src="/static/imagenes/whatsapp-line.png" alt="wha"></a>
+	
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

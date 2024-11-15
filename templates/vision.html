@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    
+    <title>Bootcampc</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <nav>
+        <ul class="navul">
+            <li class="navulli"><a class="navullia" href="{{ url_for('index') }}">Inicio</a></li>
+            <li class="navulli"><a class="navullia"  href=".">Hospedaje </a>
+                <ul class="navsubul">
+                    <li class="subnavli"><a class="subnavlia"  href="{{ url_for('habitaciones') }}">Habitaciones</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href="{{ url_for('apartamentos') }}"> Apartamentos</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href= "{{ url_for('suit') }}"> Suit</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href=".">Salas</a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a class="subnavlia"class="subnavlia"  href="{{ url_for('ejecutiva') }}">Ejecutiva</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('oficina') }}"> Oficina</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('multiple') }}"> Multiple</a></li>
+                </ul> 
+            </li>      
+            <li class="navulli"><a class="navullia" href="{{ url_for('restaurante') }}">Restaurante</a></li>
+            <li class="navulli"><a class="navullia" href="."> El Hotel </a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('historia') }}">Historia</a></li>
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('mision') }}"> Mision</a></li>
+                    <li class="subnavli" ><a class="subnavlia" href="{{ url_for('vision') }}"> Vision</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href="{{ url_for('micuenta') }}" target="_blank"> Mi cuenta </a></li>
+        </ul>
+    </nav>
+    <section class="seccion-principal">
+        <h1>Visión:</h1>
+            
+        <p>Nuestra visión en Hotel Bootcamp es ser reconocida como el destino preferido para viajeros profesionales a nivel mundial. Aspiramos a redefinir la experiencia de hospedaje al integrar espacios de trabajo innovadores y servicios de alta calidad en un entorno acogedor y colaborativo. Buscamos crear una comunidad dinámica donde los huéspedes puedan conectarse, inspirarse y prosperar, convirtiendo cada estancia en una oportunidad para el crecimiento.</p>
+        
+        <img src="/static/imagenes/grafico_cancelaciones_torta.png" alt="Gráfico de cancelaciones">
+
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=T.." class="btn-wsp" target="_blank"> <img  class="btn-wspi" src="/static/imagenes/whatsapp-line.png" alt="wha"></a>
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

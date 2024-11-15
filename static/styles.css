@@ -1,0 +1,397 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;  
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 220px;
+    background-image: url('imagenes/encabezado2.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el elemento */
+    background-position: center; /* Centra la imagen en el elemento */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    filter: brightness(40%);
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #2C3E50;
+     
+}
+
+
+p{
+    font-size: 18px;
+    color:#2D2D2D; 
+    line-height: 1.5;
+}
+
+/*Parrafo de bienvenida*/
+.parrafo{
+    font-size: 18px;
+    padding: 0px 55px;
+    color:#2D2D2D; 
+    line-height: 1.5;
+}
+
+.imghotel{
+    width: 100%;
+    height: auto;  
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.una-imagen{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+nav{
+    background-color:  #2C3E50; 
+    overflow: hidden;
+}
+.navul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navulli{
+    float: left;
+    margin: 15px; 
+}
+
+.navullia{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px
+    
+}
+
+.navulli:hover .navullia{
+    background-color:#a7b2d5; 
+    overflow: hidden;
+    padding: 20px; 
+}
+.navsubul{
+    display: none;
+    position: absolute;
+    float: left;
+    list-style-type: none; 
+    background-color: #272025; 
+    padding-left: 1px;
+}
+.navulli:hover .navsubul {
+    display: block;
+    overflow: visible;
+}
+.subnavlia{
+    display: block;
+    color: white;
+    padding:  15px;
+    height: 25px;
+    text-decoration: none;
+}
+.subnavli:hover .subnavlia{
+    background-color:#a7b2d5; 
+    overflow: hidden;
+}
+section{
+    padding: 20px;
+    text-align: justify;
+    background: #FAF9F6;
+}
+.box-caurrucel{
+    width: 1200px;
+    height: auto;
+    margin: 30px auto 0;
+    overflow: hidden;
+    
+}
+.box-caurrucel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.box-caurrucel li{
+    width: 200%;
+    list-style-type: none;
+    position: relative;
+}
+.box-caurrucel img{
+    width: 100%;
+}
+
+.box-carrucelrestaurante{
+    width: 500px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.box-carrucelrestaurante ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.box-carrucelrestaurante li{
+    width: 100%;
+    list-style-type: none;
+    position: relative;
+}
+.box-carrucelrestaurante img{
+    width: 100%;
+} 
+.platos{
+    display: flex;
+    width: 100%; 
+    height: 100%; 
+    margin: auto; 
+    text-align: center
+}
+.divplatos{
+    margin:  10px ;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.divplatos img{
+    width: 100%;
+}
+.divplatos:hover img{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/*CARRUCEL IMAGENES LADO IZQUIERDO*/
+.davpadrehabitaciones{
+    display: flex;
+}
+.box-carrucelhabitaciones{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 30px auto 0;
+    overflow: hidden;
+    margin-top: 140px;
+}
+.box-carrucelhabitaciones ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.box-carrucelhabitaciones li{
+    width: 20%;
+    list-style-type: none;
+    position: relative;
+}
+.box-carrucelhabitaciones img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.box-carrucelhabitacionesp h1{
+    margin-top: 30px;
+}
+
+.box-carrucelhabitacionesp {
+    width:350px;
+    height: auto;
+    margin: 50px auto 0;
+    text-align: justify;
+}
+
+/*SEGUNDO CARRUCEL EL DEL LADO DERECHO*/
+
+.box-carrucelhabitacionestres{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 30px auto 0;
+    overflow: hidden;
+    margin-top: 140px;
+}
+.box-carrucelhabitacionestres ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.box-carrucelhabitacionestres li{
+    width: 20%;
+    list-style-type: none;
+    position: relative;
+}
+
+.box-carrucelhabitacionestres img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hospedaje h1{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+/*ELEGIR LA SUIT, CARTA IMAGENES*/
+.contenedor img{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #1C3D5A;
+    border-radius: 20px;
+}
+
+.contenedor div:hover{
+    background-color: #11294d;
+}
+
+
+.informacion{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1px;
+    text-align: center;
+}
+.informacion p:first-child{
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff; 
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+    color: #B0C4DE; 
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background: #0E2C5E;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 10px;  
+}
+.informacion button:hover{
+    background: linear-gradient(220.55deg, #5D85A6 0%, #0E2C5E 100%);
+}
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    40%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+
+footer{
+    margin-top: 50px;
+    background-color:#2C3E50;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    width: 100%;
+}
+
+footer p{
+    color: #fff;
+}
+
+.seccion-principal { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.seccion-principal video{
+    margin-top: 15px; 
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px;
+}
+
+.parrafo-sala{
+    margin-left: 40px; 
+    margin-right: 40px; 
+}
+
+
+
+.restaurante p {
+    padding-left: 10px; 
+}
+
+.seccion-principal img{
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px;
+}

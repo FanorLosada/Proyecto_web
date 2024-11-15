@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Bootcampc</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+    <!--
+        <h1><img class="imghotel" src="https://procolombia.co/sites/default/files/procolombia/news/images/hoteles-01.webp" alt="hotel"> </h1>
+    -->
+    </header>
+
+    <nav>
+        <ul class="navul">
+            <li class="navulli"><a class="navullia" href="{{ url_for('index') }}">Inicio</a></li>
+            <li class="navulli"><a class="navullia"  href=".">Hospedaje </a>
+                <ul class="navsubul">
+                    <li class="subnavli"><a class="subnavlia"  href="{{ url_for('habitaciones') }}">Habitaciones</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href="{{ url_for('apartamentos') }}"> Apartamentos</a></li>
+                    <li  class="subnavli"><a class="subnavlia" href= "{{ url_for('suit') }}"> Suit</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href=".">Salas</a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a class="subnavlia"class="subnavlia"  href="{{ url_for('ejecutiva') }}">Ejecutiva</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('oficina') }}"> Oficina</a></li>
+                    <li class="subnavli"><a class="subnavlia" href="{{ url_for('multiple') }}"> Multiple</a></li>
+                </ul> 
+            </li>      
+            <li class="navulli"><a class="navullia" href="{{ url_for('restaurante') }}">Restaurante</a></li>
+            <li class="navulli"><a class="navullia" href="."> El Hotel </a>
+                <ul class="navsubul">
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('historia') }}">Historia</a></li>
+                    <li class="subnavli" ><a  class="subnavlia" href="{{ url_for('mision') }}"> Mision</a></li>
+                    <li class="subnavli" ><a class="subnavlia" href="{{ url_for('vision') }}"> Vision</a></li>
+                </ul>
+            </li>
+            <li class="navulli"><a class="navullia" href="{{ url_for('micuenta') }}" target="_blank"> Mi cuenta </a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Hotel Bootcampc</h1>
+        
+        <p class="parrafo bievenida"> 
+            En este hotel se encontrara un espacio cómodo, moderno y pensado especialmente para el viajero de negocios. Sabemos que su tiempo es valioso; por eso, nuestras habitaciones ofrecen máxima comodidad y nuestras áreas de trabajo están diseñadas para mantenerlo productivo. Disfrute de nuestro Wi-Fi de alta velocidad, espacios de reuniones equipados y un servicio atento que se anticipa a sus necesidades.
+         </p> 
+        <div class="box-caurrucel">
+            <ul>
+                <li><img src="/static/imagenes/hotel2.jpeg" alt="HOTEL">     
+                </li>
+                <li ><img src="./static/imagenes/picsina.png" alt="piscina">     
+                </li>
+                <li ><img src="./static/imagenes/study.jpg" alt="study">     
+                </li>
+                <li ><img  src="/static/imagenes/person2.jpg" alt="HOTEL">     
+                </li>        
+                <li c><img src="/static/imagenes/camas.jpeg" alt="camas">     
+                </li>
+                <li > <img src="/static/imagenes/restaurante.jpg" alt="HOTEL">     
+                </li>
+                <li><img  src="/static/imagenes/person1.png" alt="HOTEL">     
+                </li>
+            </ul>  
+        </div>
+        <p class="parrafo despedida">Contactanos para  mas informacion y has tu reserva</p>
+        
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=T.." class="btn-wsp" target="_blank"> <img  class="btn-wspi" src="/static/imagenes/whatsapp-line.png" alt="wha"></a>
+	
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
