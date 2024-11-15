@@ -34,7 +34,7 @@ Flask: Inicia la aplicación Flask.
 
 Pandas: Proporciona estructuras de datos flexibles y eficientes, como DataFrames, que son fundamentales para trabajar con datos tabulares y series temporales
 
-##Estructura del Código
+## Estructura del Código
 
 El código se divide en secciones que configuran la base de datos, definen rutas para las páginas web, y crean gráficos para visualización.
 
@@ -54,7 +54,7 @@ El código se divide en secciones que configuran la base de datos, definen rutas
 	db = SQLAlchemy(app)
 
 
-##Clase Usuario
+## Clase Usuario
 Define el modelo de datos para los usuarios registrados en la aplicación.
 
 
@@ -67,7 +67,7 @@ Define el modelo de datos para los usuarios registrados en la aplicación.
 - usuario: Nombre de usuario del cliente, requerido.
 - contrasena: Contraseña del usuario, requerida.
 
-##Ruta Principal 
+## Ruta Principal 
 
 	@app.route('/')
 	def index():
@@ -77,7 +77,7 @@ Define el modelo de datos para los usuarios registrados en la aplicación.
 - Ruta: Página principal de la aplicación.
 - Función: Llama a grafico() para generar un gráfico y muestra index.html con la ruta del gráfico como parámetro.
 
-##Ruta /grafico
+## Ruta /grafico
 
 	@app.route('/grafico')
 	def grafico_view():
@@ -145,7 +145,7 @@ Método: Permite GET y POST.
 POST: Recibe datos del formulario (usuario y contraseña), crea un nuevo Usuario y lo guarda en la base de datos.
 GET: Muestra el formulario micuenta.html.
 
-##Inicialización y Ejecución del Servidor
+## Inicialización y Ejecución del Servidor
 
 	if __name__ == '__main__':
     with app.app_context():  # Crear el contexto de la aplicación
@@ -154,7 +154,7 @@ GET: Muestra el formulario micuenta.html.
 
 Descripción: Crea todas las tablas necesarias en la base de datos y ejecuta la aplicación en modo debug.
 
-##Notas Adicionales
+## Notas Adicionales
 
 - Archivos Estáticos: Las imágenes y archivos CSS estan en la carpeta static.
 
